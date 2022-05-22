@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilosFormulario.css" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body class="fondo">
+
+    <nav class="nav-wrapper red accent-3  ">
+        
+        <div class="container ">
+            <a href="#!" class="brand-logo"><img src="img/logop.png" width="250px" height="70px" /></a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div >
+      
+    </nav>
+  
+    <ul class="sidenav black" id="menu-responsive">
+      <li><a class="white-text" href="index.html">Inicio</a></li>
+      <li><a class="white-text" href="nosotros.html">Nosotros</a></li>
+      <li><a class="white-text" href="servicios.html">Servicios</a></li>
+      <li><a class="white-text" href="productos.html">Productos</a></li>
+      <li><a class="white-text" href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+        <ul>
+          <li><a href="index.html" class="btn-floating red tooltipped" data-position="left" data-tooltip="Inicio"><i class="material-icons">home</i></a></li>
+          <li><a href="nosotros.html" class="btn-floating red tooltipped" data-position="left" data-tooltip="Nosotros"><i class="material-icons">people</i></a></li>
+          <li><a href="servicios.html" class="btn-floating red tooltipped" data-position="left" data-tooltip="Servicios"><i class="material-icons">local_cafe</i></a></li>
+          <li><a href="productos.html" class="btn-floating red tooltipped" data-position="left" data-tooltip="Productos"><i class="material-icons">local_grocery_store</i></a></li>
+          <li><a href="contacto.html" class="btn-floating red tooltipped" data-position="left" data-tooltip="Contacto"><i class="material-icons">contact_mail</i></a></li>
+          <li><a href="tel:3316535169" class="btn-floating red tooltipped" data-position="left" data-tooltip="Llamar oficina"><i class="material-icons">call</i></a></li>
+          <li><a href="tel:3334085214" class="btn-floating red tooltipped" data-position="left" data-tooltip="Llamar Movil"><i class="material-icons">call</i></a></li>
+        </ul>
+      </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="center-align white-text">Estamos ubicados en Av. San Ignacio 1951 Parques de Santa cruz del valle Tlaquepaque Jalisco C.P 45615</h5>
+            </div>
+            <div class="col s12">
+                <p class="center-align  white-text">
+                  <a href="tel:3316535169" class="waves-effect waves-light btn mt-1"><i class="material-icons left">phone</i>Oficina (33)1653-5119</a>
+                  <a href="https://wa.link/qz6n9y" class="waves-effect waves-light btn mt-1"><i class="material-icons left">whatsapp</i>Móvil (33) 34085214 </a>
+                  <a href="tel:5587352827" class="waves-effect waves-light btn mt-1"><i class="material-icons left">phone</i>Cd.México (55) 87352827</a>                                                        
+                </p>
+            </div>
+            <div class="col s12">
+              <p class="center-align  white-text"> 
+                <a href="mailto:ventassuministros709@gmail.com" class="waves-effect waves-light btn mt-1"><i class="material-icons left">email</i>ventassuministros709@gmail.com</a>
+                <a href="mailto:instalacioneswest1@gmail.com" class="waves-effect waves-light btn mt-1"><i class="material-icons left">email</i>instalacioneswest1@gmail.com</a>                  
+              </p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <br/>
+        <br/>
+        <form action="enviar.php"  method="post" class="formulario" id="formulario">
+        
+            <div class=" formulario__grupo" id="grupo__nombre">
+                <div class="formulario__grupo input-field col s12"  >                  
+                  <input id="nombre" name="nombre" type="text" class="formulario__input">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  <label class=" formulario__label" for="nombre">Nombre</label>
+                </div>
+                <p class="formulario__input-error ">El usuario tiene que ser de 3 a 40 dígitos y solo puede contener letras.</p>
+            </div>
+
+            <div class=" formulario__grupo" id="grupo__correo">
+                <div class="formulario__grupo input-field col s12"  >
+                  <input id="correo" name="correo" type="email" class="formulario__input">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  <label class=" formulario__label" for="nombre">Correo Electrónico</label>
+                </div>
+                <p class="formulario__input-error ">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo. formato ejemplo micorreo@gmail.com</p>
+            </div>
+
+            <div class=" formulario__grupo" id="grupo__telefono">
+                <div class="formulario__grupo input-field col s12"  >
+                  <input id="telefono" name="telefono" type="tel" class="formulario__input" data-length="10">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>                  
+                  <label class=" formulario__label" for="telefono">Telefono</label>
+                </div>
+                <p class="formulario__input-error ">El telefono solo puede contener numeros a 10 dígitos.</p>
+            </div>
+
+            <div class=" formulario__grupo" id="grupo__comentarios">
+                <div class="formulario__grupo input-field col s12"  >
+                  <input id="comentarios" name="comentarios" type="text" class="formulario__input">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  <label class=" formulario__label" for="nombre">Comentarios</label>
+                </div>
+                <p class="formulario__input-error">Los comentarios deben llevar minimo 5 letras.</p>
+            </div>
+
+            <div class=" formulario__grupo" >
+            </div>
+        
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+        
+            <div class="g-recaptcha s12" data-sitekey="6Le1ldgfAAAAAHs1XZZI0gizeGrNM3U_jtUV_xzo"></div>
+          <br/>
+        
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar </button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </div>
+<br/><br/>
+    <footer class="page-footer   red darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Servicio, innovación, calidad y confianza.</h5>
+              <p class="grey-text text-lighten-4">Av. San Ignacio 1951 Parques de Santa cruz del valle Tlaquepaque Jalisco C.P 45615</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Cotactanos</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="tel:3316535169"> <i class="material-icons prefix tiny">phone</i> Oficina (33)1653-5119</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://wa.link/qz6n9y"> <i class="material-icons prefix tiny ">whatsapp </i> Móvil (33) 34085214 </a></li>
+                <li><a class="grey-text text-lighten-3" href="tel:5587352827"> <i class="material-icons prefix tiny">phone</i> Cd.México (55) 87352827</a></li>
+                <li><a class="grey-text text-lighten-3" href="mailto:ventassuministros709@gmail.com"> <i class="material-icons prefix tiny">email</i> ventassuministros709@gmail.com</a></li>
+                <li><a class="grey-text text-lighten-3" href="mailto:instalacioneswest1@gmail.com"><i class="material-icons prefix tiny">email</i> instalacioneswest1@gmail.com </a></li>                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          @ 2022 Copyright Instalaciones West
+          <a class="grey-text text-lighten-4 right" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+    <script type="text/javascript" src="js/formulario.js"></script> 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+</body>
+</html>
